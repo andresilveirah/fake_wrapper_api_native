@@ -8,7 +8,15 @@ Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of re
 
 ```json
 {
-  "url": "https://notice.sp-prod.net/?message_id=66281",
+  "message": {
+    "title": "Hello World!",
+    "description": "This is a message description.",
+    "actions": [
+      { "label": "I accept", "type": 11, "id": 111 },
+      { "label": "Reject", "type": 13, "id": 222 }
+      { "label": "Show Options", "type": 12, "id": 333 }
+    ]
+  },
   "uuid": "cfa454f8-635b-43e5-b6ba-1fbff7e56fa9",
   "foo": "bar"
 }
