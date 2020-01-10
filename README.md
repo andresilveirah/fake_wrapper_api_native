@@ -4,7 +4,7 @@ Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of re
 
 ## Routes
 
-### `GET /message?foo=bar`
+### `GET /gdpr/message-url?foo=bar`
 
 ```json
 {
@@ -18,13 +18,20 @@ Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of re
     ]
   },
   "uuid": "cfa454f8-635b-43e5-b6ba-1fbff7e56fa9",
+  "meta": "{'foo': 'bar'}",
+  "consents": {
+    "consentString": "BOn2OwMOn2OwMAGABCENCn-AAAAqyABAFIA",
+    "status": "acceptedSome",
+    "acceptedVendors": ["ABCD"],
+    "acceptedPurposes": []
+  },
   "foo": "bar"
 }
 ```
 
 The server will send back in the response whatever was sent as query param. (E.g. `foo: bar`)
 
-### `POST /action/:type`
+### `POST /gdpr/consent/`
 
 Data:
 ```json
@@ -38,8 +45,13 @@ Response:
 ```json
 {
   "uuid": "cfa454f8-635b-43e5-b6ba-1fbff7e56fa9",
-  "euconsent": "BOnf5gkOnf5gkAGABBENCm-AAAAqWADABUADQAUg",
-  "foo": "bar"
+  "meta": "{'foo': 'bar'}",
+  "consents": {
+    "euconsent": "BOn2OwMOn2OwMAGABCENCn-AAAAqyABAFIA",
+    "acceptedVendors": ["ABCD"],
+    "acceptedPurposes": []
+  },
+  "meta": "{'foo': 'bar'}"
 }
 ```
 

@@ -21,16 +21,27 @@ app.get('/message', (req, res) => {
       ]
     },
     uuid: 'cfa454f8-635b-43e5-b6ba-1fbff7e56fa9',
+    meta: "{'foo': 'bar'}",
+    userConsent: {
+      acceptedVendors: ["VendorIdExample"],
+      acceptedCategories: ["CategoryExample"],
+      euconsent: "BOn2OwMOn2OwMAGABCENCn-AAAAqyABAFIA"
+    },
     ...req.query
   })
 })
 
-app.post('/action/:type', (req, res) => {
+app.post('/gdpr/consent/', (req, res) => {
   res.status(200).json({
     uuid: 'cfa454f8-635b-43e5-b6ba-1fbff7e56fa9',
-    euconsent: 'BOnf5gkOnf5gkAGABBENCm-AAAAqWADABUADQAUg',
+    meta: "{'foo': 'bar'}",
+    userConsent: {
+      acceptedVendors: ["VendorIdExample"],
+      acceptedCategories: ["CategoryExample"],
+      euconsent: "BOn2OwMOn2OwMAGABCENCn-AAAAqyABAFIA"
+    },
     ...req.body
   })
 })
 
-app.listen(config.port, () => console.log(`AMP - listening on port ${config.port}`))
+app.listen(config.port, () => console.log(`FAKE Wrapper API - listening on port ${config.port}`))
