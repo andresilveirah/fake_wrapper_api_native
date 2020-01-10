@@ -4,7 +4,7 @@ Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of re
 
 ## Routes
 
-### `GET /gdpr/message-url?foo=bar`
+### `GET /gdpr/message?foo=bar`
 
 ```json
 {

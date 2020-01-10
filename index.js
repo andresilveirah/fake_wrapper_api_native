@@ -9,7 +9,7 @@ const app = express()
 app.use(json())
 app.use(logger)
 
-app.get('/message', (req, res) => {
+app.get('/gdpr/message', (req, res) => {
   res.status(200).json({
     message: {
       title: "Hello World!",
