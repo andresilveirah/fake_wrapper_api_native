@@ -46,7 +46,7 @@ Response:
 {
   "uuid": "cfa454f8-635b-43e5-b6ba-1fbff7e56fa9",
   "meta": "{'foo': 'bar'}",
-  "consents": {
+  "userConsent": {
     "euconsent": "BOn2OwMOn2OwMAGABCENCn-AAAAqyABAFIA",
     "acceptedVendors": ["ABCD"],
     "acceptedPurposes": []
