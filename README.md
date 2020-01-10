@@ -13,7 +13,7 @@ Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of re
     "description": "This is a message description.",
     "actions": [
       { "label": "I accept", "type": 11, "id": 111 },
-      { "label": "Reject", "type": 13, "id": 222 }
+      { "label": "Reject", "type": 13, "id": 222 },
       { "label": "Show Options", "type": 12, "id": 333 }
     ]
   },
