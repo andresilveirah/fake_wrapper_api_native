@@ -1,5 +1,7 @@
 # fake_wrapper_api_native
 
+Similar to https://github.com/andresilveirah/fake_wrapper_api/ but instead of returning an URL, it returns a fake message object.
+
 ## Routes
 
 ### `GET /message?foo=bar`
